@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Fernandes Ortega - Curriculum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para a imagem de fundo */
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5; /* Transparência */
+        }
+
+        /* Navbar com tema dark */
+        .navbar-dark {
+            background-color: #343a40;
+        }
+
+        /* Efeito de hover nas bandeiras */
+        .languages img:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+
+        /* Bandeira selecionada */
+        .languages img.selected {
+            border: 2px solid white;
+            transform: scale(1.3);
+            opacity: 1;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer img {
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        /* Botão de voltar ao topo */
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #back-to-top img {
+            width: 20px;
+        }
+
+        /* Esconder seções */
+        .hidden {
+            display: none;
+        }
+
+        /* Ajustes de layout em grids */
+        .section-title {
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .section-content {
+            margin-bottom: 20px;
+        }
+
+        .image-center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Ajusta o tamanho do conteúdo para telas menores */
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagem de fundo -->
+    <div class="background-image"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="navbar-brand">Bruno Fernandes Ortega</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbar-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IDIOMAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbar-language">
+                            <li><a class="dropdown-item" onclick="changeLanguage('pt-br')">Português</a></li>
+                            <li><a class="dropdown-item" onclick="changeLanguage('es')">Español</a></li>
+                            <li><a class="dropdown-item" onclick="changeLanguage('it')">Italiano</a></li>
+                            <li><a class="dropdown-item" onclick="changeLanguage('fr')">Français</a></li>
+                            <li><a class="dropdown-item" onclick="changeLanguage('en-us')">English</a></li>
+                        </ul>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#footer" id="navbar-contact">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção principal com o conteúdo -->
+    <div class="container content-section">
+        <!-- Seção em Português -->
+        <!-- Seção em Português -->
+        <section id="pt-br" >
+            <h2 class="text-center section-title">Currículo</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Excelência Acadêmica e Conquistas em Olimpíadas:</h3>
+                    <ul>
+                        <li><strong>Medalhista de Ouro:</strong> Olimpíada Nacional de Ciências (Brasil)</li>
+                        <li><strong>Medalhista de Ouro:</strong> Olimpíada Nacional de Eficiência Energética (Brasil)</li>
+                        <li><strong>Medalhista de Prata:</strong> Olimpíada Brasileira de Astronomia e Astronáutica</li>
+                        <li><strong>Medalhista de Prata:</strong> Torneio Brasileiro de Ciências</li>
+                        <li><strong>Top 5 da Escola:</strong> Entre os 5 melhores alunos de um total de 250</li>
+                        <li><strong>Experiência em Liderança:</strong> Representante de Turma</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Conquistas Atléticas de Elite:</h3>
+                    <ul>
+                        <li><strong>Jiu Jitsu:</strong> Aproximadamente 30 medalhas</li>
+                        <li><strong>1º Lugar:</strong> American Nationals</li>
+                        <li><strong>1º Lugar:</strong> Competição Estadual Paranaense</li>
+                        <li><strong>3º Lugar:</strong> Campeonato Brasileiro e Pan-Americano</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Talento Musical:</h3>
+                    <ul>
+                        <li><strong>Baixista:</strong> Explora ritmo, trabalho em equipe e expressão pessoal</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Domínio Linguístico:</h3>
+                    <ul>
+                        <li><strong>Poliglota:</strong> Português, Espanhol, Italiano, Francês e Inglês (B2)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Criação de Conteúdo:</h3>
+                    <ul>
+                        <li><strong>Instagram:</strong> 30k visualizações em um vídeo, 700 seguidores</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>TED Talks:</h3>
+                    <ul>
+                        <li><strong>Palestrante TED:</strong> 2021, 2022 e 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Escotismo:</h3>
+                    <ul>
+                        <li><strong>Escoteiro:</strong> Participação ativa e liderança</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Visão e Ambições:</h3>
+                    <p>Movido por paixão por ciência, tecnologia e comunicação global.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção em Espanhol -->
+        <section id="es" class="hidden">
+            <h2 class="text-center section-title">Currículum</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Excelencia Académica y Logros en Olimpiadas:</h3>
+                    <ul>
+                        <li><strong>Medalla de Oro:</strong> Olimpiada Nacional de Ciencias (Brasil)</li>
+                        <li><strong>Medalla de Oro:</strong> Olimpiada Nacional de Eficiencia Energética (Brasil)</li>
+                        <li><strong>Medalla de Plata:</strong> Olimpiada Brasileña de Astronomía y Astronáutica</li>
+                        <li><strong>Medalla de Plata:</strong> Torneo Brasileño de Ciencias</li>
+                        <li><strong>Top 5 de la Escuela:</strong> Entre los 5 mejores alumnos de un total de 250</li>
+                        <li><strong>Experiencia en Liderazgo:</strong> Representante de Clase</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Logros Atléticos de Élite:</h3>
+                    <ul>
+                        <li><strong>Jiu Jitsu:</strong> Aproximadamente 30 medallas</li>
+                        <li><strong>1er Lugar:</strong> American Nationals</li>
+                        <li><strong>1er Lugar:</strong> Competición Estatal Paranaense</li>
+                        <li><strong>3er Lugar:</strong> Campeonato Brasileño y Panamericano</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Talento Musical:</h3>
+                    <ul>
+                        <li><strong>Bajista:</strong> Explora ritmo, trabajo en equipo y expresión personal</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Dominio Lingüístico:</h3>
+                    <ul>
+                        <li><strong>Políglota:</strong> Portugués, Español, Italiano, Francés e Inglés (B2)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Creación de Contenidos:</h3>
+                    <ul>
+                        <li><strong>Instagram:</strong> 30k visualizaciones en un video, 700 seguidores</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>TED Talks:</h3>
+                    <ul>
+                        <li><strong>Orador TED:</strong> 2021, 2022 y 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Escultismo:</h3>
+                    <ul>
+                        <li><strong>Scout:</strong> Participación activa y liderazgo</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Visión y Ambiciones:</h3>
+                    <p>Impulsado por la pasión por la ciencia, la tecnología y la comunicación global.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção em Italiano -->
+        <section id="it" class="hidden">
+            <h2 class="text-center section-title">Curriculum</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Eccellenza Accademica e Successi nelle Olimpiadi:</h3>
+                    <ul>
+                        <li><strong>Medaglia d'Oro:</strong> Olimpiadi Nazionali delle Scienze (Brasile)</li>
+                        <li><strong>Medaglia d'Oro:</strong> Olimpiadi Nazionali di Efficienza Energetica (Brasile)</li>
+                        <li><strong>Medaglia d'Argento:</strong> Olimpiadi Brasiliane di Astronomia e Astronautica</li>
+                        <li><strong>Medaglia d'Argento:</strong> Torneo Brasiliano delle Scienze</li>
+                        <li><strong>Top 5 della Scuola:</strong> Tra i 5 migliori studenti su un totale di 250</li>
+                        <li><strong>Esperienza di Leadership:</strong> Rappresentante di Classe</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Successi Atletici d'Élite:</h3>
+                    <ul>
+                        <li><strong>Jiu Jitsu:</strong> Circa 30 medaglie</li>
+                        <li><strong>1° Posto:</strong> American Nationals</li>
+                        <li><strong>1° Posto:</strong> Competizione Statale del Paraná</li>
+                        <li><strong>3° Posto:</strong> Campionato Brasiliano e Panamericano</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Talento Musicale:</h3>
+                    <ul>
+                        <li><strong>Bassista:</strong> Esplora il ritmo, il lavoro di squadra e l'espressione personale</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Competenza Linguistica:</h3>
+                    <ul>
+                        <li><strong>Poliglotta:</strong> Portoghese, Spagnolo, Italiano, Francese e Inglese (B2)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Creazione di Contenuti:</h3>
+                    <ul>
+                        <li><strong>Instagram:</strong> 30k visualizzazioni in un video, 700 follower</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>TED Talks:</h3>
+                    <ul>
+                        <li><strong>Oratore TED:</strong> 2021, 2022 e 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Scoutismo:</h3>
+                    <ul>
+                        <li><strong>Scout:</strong> Partecipazione attiva e leadership</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Visione e Ambizioni:</h3>
+                    <p>Mosso dalla passione per la scienza, la tecnologia e la comunicazione globale.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção em Francês -->
+        <section id="fr" class="hidden">
+            <h2 class="text-center section-title">Curriculum Vitae</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Excellence Académique et Réalisations en Olympiades:</h3>
+                    <ul>
+                        <li><strong>Médaille d'Or:</strong> Olympiade Nationale des Sciences (Brésil)</li>
+                        <li><strong>Médaille d'Or:</strong> Olympiade Nationale de l'Efficacité Énergétique (Brésil)</li>
+                        <li><strong>Médaille d'Argent:</strong> Olympiade Brésilienne d'Astronomie et d'Astronautique</li>
+                        <li><strong>Médaille d'Argent:</strong> Tournoi Brésilien des Sciences</li>
+                        <li><strong>Top 5 de l'École:</strong> Parmi les 5 meilleurs élèves sur un total de 250</li>
+                        <li><strong>Expérience en Leadership:</strong> Représentant de Classe</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Réalisations Athlétiques d'Élite:</h3>
+                    <ul>
+                        <li><strong>Jiu Jitsu:</strong> Environ 30 médailles</li>
+                        <li><strong>1ère Place:</strong> American Nationals</li>
+                        <li><strong>1ère Place:</strong> Compétition d'État du Paraná</li>
+                        <li><strong>3ème Place:</strong> Championnat Brésilien et Panaméricain</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Talent Musical:</h3>
+                    <ul>
+                        <li><strong>Bassiste:</strong> Explore le rythme, le travail d'équipe et l'expression personnelle</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Compétence Linguistique:</h3>
+                    <ul>
+                        <li><strong>Polyglotte:</strong> Portugais, Espagnol, Italien, Français et Anglais (B2)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Création de Contenu:</h3>
+                    <ul>
+                        <li><strong>Instagram:</strong> 30k vues sur une seule vidéo, 700 abonnés</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>TED Talks:</h3>
+                    <ul>
+                        <li><strong>Orateur TED:</strong> 2021, 2022 et 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Scoutisme:</h3>
+                    <ul>
+                        <li><strong>Scout:</strong> Participation active et leadership</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Vision et Ambitions:</h3>
+                    <p>Animé par une passion pour la science, la technologie et la communication mondiale.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção em Inglês -->
+        <section id="en-us" class="hidden">
+            <h2 class="text-center section-title">Curriculum</h2>
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Academic Excellence and Olympiad Achievements:</h3>
+                    <ul>
+                        <li><strong>Gold Medalist:</strong> National Science Olympiad (Brazil)</li>
+                        <li><strong>Gold Medalist:</strong> Energetic Efficiency National Olympiad (Brazil)</li>
+                        <li><strong>Silver Medalist:</strong> Brazilian Astronomics and Astronautics Olympiad</li>
+                        <li><strong>Silver Medalist:</strong> Brazilian Science Tournament</li>
+                        <li><strong>Top 5 in School:</strong> Among the top 5 students out of 250</li>
+                        <li><strong>Leadership Experience:</strong> Class Representative</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Elite Athletic Achievements:</h3>
+                    <ul>
+                        <li><strong>Jiu Jitsu Champion:</strong> 30 medals</li>
+                        <li><strong>1st Place:</strong> American Nationals</li>
+                        <li><strong>1st Place:</strong> Paraná State Competition</li>
+                        <li><strong>3rd Place:</strong> Brazilian Nationals and Pan American Championships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Musical Talent:</h3>
+                    <ul>
+                        <li><strong>Bass Player:</strong> Uses music as an outlet for rhythm and teamwork</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Linguistic Mastery:</h3>
+                    <ul>
+                        <li><strong>Polyglot:</strong> Portuguese, Spanish, Italian, French, and English (B2)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Content Creation:</h3>
+                    <ul>
+                        <li><strong>Instagram:</strong> 30k views on a single video, 700 followers</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>TED Talks:</h3>
+                    <ul>
+                        <li><strong>TED Speaker:</strong> 2021, 2022, and 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row section-content">
+                <div class="col-md-6">
+                    <h3>Scouting:</h3>
+                    <ul>
+                        <li><strong>Scout:</strong> Active involvement and leadership</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Vision and Ambitions:</h3>
+                    <p>Driven by a passion for science, technology, and global communication.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2024 Bruno Fernandes Ortega - All rights reserved.</p>
+            <a href="https://instagram.com/bruno.ofernandes" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> @bruno.ofernandes
+            </a>
+        </div>
+    </footer>
+
+    <!-- Botão de voltar para o topo -->
+    <button id="back-to-top" onclick="scrollToTop()">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Voltar para o topo">
+    </button>
+
+    <script>
+        // Função para alterar a navbar conforme o idioma
+        function changeLanguage(language) {
+            const languages = {
+                'pt-br': {
+                    contact: 'CONTATO',
+                    language: 'IDIOMAS'
+                },
+                'es': {
+                    contact: 'CONTACTO',
+                    language: 'IDIOMAS'
+                },
+                'it': {
+                    contact: 'CONTATTO',
+                    language: 'LINGUE'
+                },
+                'fr': {
+                    contact: 'CONTACT',
+                    language: 'LANGUES'
+                },
+                'en-us': {
+                    contact: 'CONTACT',
+                    language: 'LANGUAGES'
+                }
+            };
+
+            document.getElementById('navbar-contact').innerText = languages[language].contact;
+            document.getElementById('navbar-language').innerText = languages[language].language;
+
+            showLanguage(language);
+        }
+
+        // Mostrar o botão de voltar ao topo quando rolar para baixo
+        window.onscroll = function() {
+            const backToTopBtn = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Função para rolar até o topo da página
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Alterar o idioma exibido na página
+        function showLanguage(language) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.add('hidden'));
+            document.getElementById(language).classList.remove('hidden');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

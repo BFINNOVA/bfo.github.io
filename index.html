@@ -1,569 +1,1265 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Fernandes Ortega - Curriculum</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Estilo para a imagem de fundo */
-        .background-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-image: url('https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637_960_720.jpg');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.5; /* Transparência */
-        }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Edimar Ferla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Curriculum Vitae Edimar Ferla" />
+  <meta name="keywords" content="curriculo, vitae, git, github, Ferla, Edimar, Ferla Interativa, Marketing Digital" />
+  <link rel="shortcut icon" href="/images/icon/favicon.ico">
 
-        /* Navbar com tema dark */
-        .navbar-dark {
-            background-color: #343a40;
-        }
-
-        /* Efeito de hover nas bandeiras */
-        .languages img:hover {
-            transform: scale(1.2);
-            opacity: 0.8;
-        }
-
-        /* Bandeira selecionada */
-        .languages img.selected {
-            border: 2px solid white;
-            transform: scale(1.3);
-            opacity: 1;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #000;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin-left: 10px;
-        }
-
-        footer img {
-            width: 20px;
-            vertical-align: middle;
-        }
-
-        /* Botão de voltar ao topo */
-        #back-to-top {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: #000;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 10px 15px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-
-        #back-to-top img {
-            width: 20px;
-        }
-
-        /* Esconder seções */
-        .hidden {
-            display: none;
-        }
-
-        /* Ajustes de layout em grids */
-        .section-title {
-            margin-top: 30px;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .section-content {
-            margin-bottom: 20px;
-        }
-
-        .image-center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Ajusta o tamanho do conteúdo para telas menores */
-        @media (max-width: 768px) {
-            .header-section h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main-green.css" type="text/css">
+  <link rel="stylesheet" href="css/progress.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/qrcode.js"></script>
 </head>
-<body>
 
-    <!-- Imagem de fundo -->
-    <div class="background-image"></div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="navbar-brand">Bruno Fernandes Ortega</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbar-language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            IDIOMAS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbar-language">
-                            <li><a class="dropdown-item" onclick="changeLanguage('pt-br')">Português</a></li>
-                            <li><a class="dropdown-item" onclick="changeLanguage('es')">Español</a></li>
-                            <li><a class="dropdown-item" onclick="changeLanguage('it')">Italiano</a></li>
-                            <li><a class="dropdown-item" onclick="changeLanguage('fr')">Français</a></li>
-                            <li><a class="dropdown-item" onclick="changeLanguage('en-us')">English</a></li>
-                        </ul>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="#footer" id="navbar-contact">CONTATO</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Seção principal com o conteúdo -->
-    <div class="container content-section">
-        <!-- Seção em Português -->
-        <!-- Seção em Português -->
-        <section id="pt-br" >
-            <h2 class="text-center section-title">Currículo</h2>
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Excelência Acadêmica e Conquistas em Olimpíadas:</h3>
-                    <ul>
-                        <li><strong>Medalhista de Ouro:</strong> Olimpíada Nacional de Ciências (Brasil)</li>
-                        <li><strong>Medalhista de Ouro:</strong> Olimpíada Nacional de Eficiência Energética (Brasil)</li>
-                        <li><strong>Medalhista de Prata:</strong> Olimpíada Brasileira de Astronomia e Astronáutica</li>
-                        <li><strong>Medalhista de Prata:</strong> Torneio Brasileiro de Ciências</li>
-                        <li><strong>Top 5 da Escola:</strong> Entre os 5 melhores alunos de um total de 250</li>
-                        <li><strong>Experiência em Liderança:</strong> Representante de Turma</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Conquistas Atléticas de Elite:</h3>
-                    <ul>
-                        <li><strong>Jiu Jitsu:</strong> Aproximadamente 30 medalhas</li>
-                        <li><strong>1º Lugar:</strong> American Nationals</li>
-                        <li><strong>1º Lugar:</strong> Competição Estadual Paranaense</li>
-                        <li><strong>3º Lugar:</strong> Campeonato Brasileiro e Pan-Americano</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Talento Musical:</h3>
-                    <ul>
-                        <li><strong>Baixista:</strong> Explora ritmo, trabalho em equipe e expressão pessoal</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Domínio Linguístico:</h3>
-                    <ul>
-                        <li><strong>Poliglota:</strong> Português, Espanhol, Italiano, Francês e Inglês (B2)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Criação de Conteúdo:</h3>
-                    <ul>
-                        <li><strong>Instagram:</strong> 30k visualizações em um vídeo, 700 seguidores</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>TED Talks:</h3>
-                    <ul>
-                        <li><strong>Palestrante TED:</strong> 2021, 2022 e 2024</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Escotismo:</h3>
-                    <ul>
-                        <li><strong>Escoteiro:</strong> Participação ativa e liderança</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Visão e Ambições:</h3>
-                    <p>Movido por paixão por ciência, tecnologia e comunicação global.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção em Espanhol -->
-        <section id="es" class="hidden">
-            <h2 class="text-center section-title">Currículum</h2>
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Excelencia Académica y Logros en Olimpiadas:</h3>
-                    <ul>
-                        <li><strong>Medalla de Oro:</strong> Olimpiada Nacional de Ciencias (Brasil)</li>
-                        <li><strong>Medalla de Oro:</strong> Olimpiada Nacional de Eficiencia Energética (Brasil)</li>
-                        <li><strong>Medalla de Plata:</strong> Olimpiada Brasileña de Astronomía y Astronáutica</li>
-                        <li><strong>Medalla de Plata:</strong> Torneo Brasileño de Ciencias</li>
-                        <li><strong>Top 5 de la Escuela:</strong> Entre los 5 mejores alumnos de un total de 250</li>
-                        <li><strong>Experiencia en Liderazgo:</strong> Representante de Clase</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Logros Atléticos de Élite:</h3>
-                    <ul>
-                        <li><strong>Jiu Jitsu:</strong> Aproximadamente 30 medallas</li>
-                        <li><strong>1er Lugar:</strong> American Nationals</li>
-                        <li><strong>1er Lugar:</strong> Competición Estatal Paranaense</li>
-                        <li><strong>3er Lugar:</strong> Campeonato Brasileño y Panamericano</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Talento Musical:</h3>
-                    <ul>
-                        <li><strong>Bajista:</strong> Explora ritmo, trabajo en equipo y expresión personal</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Dominio Lingüístico:</h3>
-                    <ul>
-                        <li><strong>Políglota:</strong> Portugués, Español, Italiano, Francés e Inglés (B2)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Creación de Contenidos:</h3>
-                    <ul>
-                        <li><strong>Instagram:</strong> 30k visualizaciones en un video, 700 seguidores</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>TED Talks:</h3>
-                    <ul>
-                        <li><strong>Orador TED:</strong> 2021, 2022 y 2024</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Escultismo:</h3>
-                    <ul>
-                        <li><strong>Scout:</strong> Participación activa y liderazgo</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Visión y Ambiciones:</h3>
-                    <p>Impulsado por la pasión por la ciencia, la tecnología y la comunicación global.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção em Italiano -->
-        <section id="it" class="hidden">
-            <h2 class="text-center section-title">Curriculum</h2>
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Eccellenza Accademica e Successi nelle Olimpiadi:</h3>
-                    <ul>
-                        <li><strong>Medaglia d'Oro:</strong> Olimpiadi Nazionali delle Scienze (Brasile)</li>
-                        <li><strong>Medaglia d'Oro:</strong> Olimpiadi Nazionali di Efficienza Energetica (Brasile)</li>
-                        <li><strong>Medaglia d'Argento:</strong> Olimpiadi Brasiliane di Astronomia e Astronautica</li>
-                        <li><strong>Medaglia d'Argento:</strong> Torneo Brasiliano delle Scienze</li>
-                        <li><strong>Top 5 della Scuola:</strong> Tra i 5 migliori studenti su un totale di 250</li>
-                        <li><strong>Esperienza di Leadership:</strong> Rappresentante di Classe</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Successi Atletici d'Élite:</h3>
-                    <ul>
-                        <li><strong>Jiu Jitsu:</strong> Circa 30 medaglie</li>
-                        <li><strong>1° Posto:</strong> American Nationals</li>
-                        <li><strong>1° Posto:</strong> Competizione Statale del Paraná</li>
-                        <li><strong>3° Posto:</strong> Campionato Brasiliano e Panamericano</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Talento Musicale:</h3>
-                    <ul>
-                        <li><strong>Bassista:</strong> Esplora il ritmo, il lavoro di squadra e l'espressione personale</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Competenza Linguistica:</h3>
-                    <ul>
-                        <li><strong>Poliglotta:</strong> Portoghese, Spagnolo, Italiano, Francese e Inglese (B2)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Creazione di Contenuti:</h3>
-                    <ul>
-                        <li><strong>Instagram:</strong> 30k visualizzazioni in un video, 700 follower</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>TED Talks:</h3>
-                    <ul>
-                        <li><strong>Oratore TED:</strong> 2021, 2022 e 2024</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Scoutismo:</h3>
-                    <ul>
-                        <li><strong>Scout:</strong> Partecipazione attiva e leadership</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Visione e Ambizioni:</h3>
-                    <p>Mosso dalla passione per la scienza, la tecnologia e la comunicazione globale.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção em Francês -->
-        <section id="fr" class="hidden">
-            <h2 class="text-center section-title">Curriculum Vitae</h2>
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Excellence Académique et Réalisations en Olympiades:</h3>
-                    <ul>
-                        <li><strong>Médaille d'Or:</strong> Olympiade Nationale des Sciences (Brésil)</li>
-                        <li><strong>Médaille d'Or:</strong> Olympiade Nationale de l'Efficacité Énergétique (Brésil)</li>
-                        <li><strong>Médaille d'Argent:</strong> Olympiade Brésilienne d'Astronomie et d'Astronautique</li>
-                        <li><strong>Médaille d'Argent:</strong> Tournoi Brésilien des Sciences</li>
-                        <li><strong>Top 5 de l'École:</strong> Parmi les 5 meilleurs élèves sur un total de 250</li>
-                        <li><strong>Expérience en Leadership:</strong> Représentant de Classe</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Réalisations Athlétiques d'Élite:</h3>
-                    <ul>
-                        <li><strong>Jiu Jitsu:</strong> Environ 30 médailles</li>
-                        <li><strong>1ère Place:</strong> American Nationals</li>
-                        <li><strong>1ère Place:</strong> Compétition d'État du Paraná</li>
-                        <li><strong>3ème Place:</strong> Championnat Brésilien et Panaméricain</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Talent Musical:</h3>
-                    <ul>
-                        <li><strong>Bassiste:</strong> Explore le rythme, le travail d'équipe et l'expression personnelle</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Compétence Linguistique:</h3>
-                    <ul>
-                        <li><strong>Polyglotte:</strong> Portugais, Espagnol, Italien, Français et Anglais (B2)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Création de Contenu:</h3>
-                    <ul>
-                        <li><strong>Instagram:</strong> 30k vues sur une seule vidéo, 700 abonnés</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>TED Talks:</h3>
-                    <ul>
-                        <li><strong>Orateur TED:</strong> 2021, 2022 et 2024</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Scoutisme:</h3>
-                    <ul>
-                        <li><strong>Scout:</strong> Participation active et leadership</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Vision et Ambitions:</h3>
-                    <p>Animé par une passion pour la science, la technologie et la communication mondiale.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção em Inglês -->
-        <section id="en-us" class="hidden">
-            <h2 class="text-center section-title">Curriculum</h2>
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Academic Excellence and Olympiad Achievements:</h3>
-                    <ul>
-                        <li><strong>Gold Medalist:</strong> National Science Olympiad (Brazil)</li>
-                        <li><strong>Gold Medalist:</strong> Energetic Efficiency National Olympiad (Brazil)</li>
-                        <li><strong>Silver Medalist:</strong> Brazilian Astronomics and Astronautics Olympiad</li>
-                        <li><strong>Silver Medalist:</strong> Brazilian Science Tournament</li>
-                        <li><strong>Top 5 in School:</strong> Among the top 5 students out of 250</li>
-                        <li><strong>Leadership Experience:</strong> Class Representative</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Elite Athletic Achievements:</h3>
-                    <ul>
-                        <li><strong>Jiu Jitsu Champion:</strong> 30 medals</li>
-                        <li><strong>1st Place:</strong> American Nationals</li>
-                        <li><strong>1st Place:</strong> Paraná State Competition</li>
-                        <li><strong>3rd Place:</strong> Brazilian Nationals and Pan American Championships</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Musical Talent:</h3>
-                    <ul>
-                        <li><strong>Bass Player:</strong> Uses music as an outlet for rhythm and teamwork</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Linguistic Mastery:</h3>
-                    <ul>
-                        <li><strong>Polyglot:</strong> Portuguese, Spanish, Italian, French, and English (B2)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Content Creation:</h3>
-                    <ul>
-                        <li><strong>Instagram:</strong> 30k views on a single video, 700 followers</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>TED Talks:</h3>
-                    <ul>
-                        <li><strong>TED Speaker:</strong> 2021, 2022, and 2024</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row section-content">
-                <div class="col-md-6">
-                    <h3>Scouting:</h3>
-                    <ul>
-                        <li><strong>Scout:</strong> Active involvement and leadership</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Vision and Ambitions:</h3>
-                    <p>Driven by a passion for science, technology, and global communication.</p>
-                </div>
-            </div>
-        </section>
+<body class="material-template">
+  <!-- Loading animation -->
+  <div id="loadingScreen">
+    <div id="progressBar">
+      <div></div>
     </div>
+  </div>
+  <!-- /Loading animation -->
 
-    <!-- Rodapé -->
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2024 Bruno Fernandes Ortega - All rights reserved.</p>
-            <a href="https://instagram.com/bruno.ofernandes" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> @bruno.ofernandes
-            </a>
+  <div id="page" class="page">
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide">
+      <div class="header-content">
+        <div class="site-title-block mobile-hidden">
+          <a href="index.html#home">
+            <div class="site-title">Edimar <span>Ferla</span></div>
+          </a>
         </div>
-    </footer>
 
-    <!-- Botão de voltar para o topo -->
-    <button id="back-to-top" onclick="scrollToTop()">
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Voltar para o topo">
-    </button>
+        <!-- Navigation -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <li>
+              <a class="pt-trigger" href="index.html#home">Início</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="index.html#resume">Currículo</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="index.html#services">Serviços</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="index.html#portfolio">Portfólio</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="index.html#gerarqrcode">Gerar QR Code</a>
+            </li>
+          </ul>
+          <!-- /Main menu -->
+        </div>
+        <!-- Navigation -->
+      </div>
+    </header>
+    <!-- /Header -->
 
-    <script>
-        // Função para alterar a navbar conforme o idioma
-        function changeLanguage(language) {
-            const languages = {
-                'pt-br': {
-                    contact: 'CONTATO',
-                    language: 'IDIOMAS'
-                },
-                'es': {
-                    contact: 'CONTACTO',
-                    language: 'IDIOMAS'
-                },
-                'it': {
-                    contact: 'CONTATTO',
-                    language: 'LINGUE'
-                },
-                'fr': {
-                    contact: 'CONTACT',
-                    language: 'LANGUES'
-                },
-                'en-us': {
-                    contact: 'CONTACT',
-                    language: 'LANGUAGES'
-                }
-            };
+    <!-- Mobile Header -->
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-site-title">Edimar Ferla</div>
+      </div>
 
-            document.getElementById('navbar-contact').innerText = languages[language].contact;
-            document.getElementById('navbar-language').innerText = languages[language].language;
+      <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- /Mobile Header -->
 
-            showLanguage(language);
-        }
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+      <!-- Page changer wrapper -->
+      <div class="pt-wrapper">
+        <!-- Subpages -->
+        <div class="subpages">
 
-        // Mostrar o botão de voltar ao topo quando rolar para baixo
-        window.onscroll = function() {
-            const backToTopBtn = document.getElementById('back-to-top');
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
-            }
-        };
+          <!-- Home Subpage -->
+          <section class="pt-page" data-id="home">
+            <div class="section-inner start-page-content">
+              <div class="page-header">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="photo">
+                      <img src="images/1avatar.png" alt="Edimar Ferla">
+                    </div>
+                  </div>
 
-        // Função para rolar até o topo da página
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+                  <div class="col-sm-8 col-md-8 col-lg-8">
+                    <div class="title-block">
+                      <h1>Edimar Ferla</h1>
+                      <div class="owl-carousel text-rotation">
+                        <div class="item">
+                          <div class="sp-subtitle">Consultoria e Mentoria Particular</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Captação de Leads</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Gestão de Tráfego</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Vendas Online</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Automação de Atendimento</div>
+                        </div>
+                      </div>
+                    </div>
 
-        // Alterar o idioma exibido na página
-        function showLanguage(language) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.classList.add('hidden'));
-            document.getElementById(language).classList.remove('hidden');
-        }
-    </script>
+                    <div class="social-links">
+                      <a href="https://www.linkedin.com/in/edimar-ferla" target="_blank"><i
+                          class="fa fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/i.ferla/" target="_blank"><i class="fa fa-instagram"></i></a>
+                      <a href="https://api.whatsapp.com/send/?phone=5541996137770&text&type=phone_number&app_absent=0"
+                        target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-content">
+                <div class="row">                  
+                    <div class="about-me">
+                        <div class="block-title">
+                            <h3>Quem <span>Sou?</span></h3>
+                        </div>                                
+                        <p><img align="right" width="50%" src="images/fullstack.gif" alt="NGUD" style="margin-left: 20px;" /></p>                                        
+                        <p style="text-align: justify;">
+                            Sou um profissional com mais de 15 anos de experiência em telecomunicações e desenvolvimento de software, 
+                            atuando em empresas globais como Minsait, Claro Brasil, Nokia Siemens, Claro Chile e Siemens. 
+                            Minha trajetória inclui a operação e manutenção de redes críticas, desenvolvimento de soluções tecnológicas inovadoras, 
+                            e liderança em projetos que impulsionam o futuro digital. Tenho uma sólida expertise em transmissão de dados, 
+                            especialmente em redes TX DWDM Fotônico, além de vasta experiência na resolução de problemas técnicos complexos e 
+                            otimização de redes. Estou comprometido com a inovação contínua e com a entrega de resultados que agregam valor real 
+                            às organizações.
+                        </p>                         
+                      </div>      
+                      <img src="images/machine.gif">
+                      
+                      <div class="block-title">
+                      <h3>Mult<span>Skills</span></h3>
+                     
+                      <p align="center">
+                      <table align="center" style="border-collapse: collapse;">
+                        <tr>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://reactjs.org/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="55" height="55" />
+                              <br>React
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://redux.js.org/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/redux-icon.svg" alt="Redux" width="55" height="55" />
+                              <br>Redux
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://nextjs.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=nextjs" width="45" height="45" alt="Next.js" />
+                              <br>Next.js
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.gatsbyjs.com/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/gatsby-icon.svg" alt="Gatsby" width="55" height="55" />
+                              <br>Gatsby
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://vuejs.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=vue" width="45" height="45" alt="Vue" />
+                              <br>Vue
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://nuxtjs.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=nuxtjs" width="45" height="45" alt="Nuxt.js" />
+                              <br>Nuxt.js
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://angular.io/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=angular" width="45" height="45" alt="Angular" />
+                              <br>Angular
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://nestjs.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=nestjs" width="45" height="45" alt="Nest.js" />
+                              <br>Nest.js
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://nodejs.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=nodejs" width="45" height="45" alt="Node.js" />
+                              <br>Node.js
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://expressjs.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=express" width="45" height="45" alt="Express" />
+                              <br>Express
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://svelte.dev/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=svelte" width="45" height="45" alt="Svelte" />
+                              <br>Svelte
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://wordpress.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=wordpress" width="45" height="45" alt="WordPress" />
+                              <br>WordPress
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.typescriptlang.org/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="Typescript" width="55" height="55" />
+                              <br>Typescript
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.php.net/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=php" width="45" height="45" alt="PHP" />
+                              <br>PHP
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://laravel.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=laravel" width="45" height="45" alt="Laravel" />
+                              <br>Laravel
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.python.org/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="55" height="55" />
+                              <br>Python
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.djangoproject.com/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="Django" width="55" height="55" />
+                              <br>Django
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://flask.palletsprojects.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=flask" width="45" height="45" alt="Flask" />
+                              <br>Flask
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.ruby-lang.org/en/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=ruby" width="45" height="45" alt="Ruby" />
+                              <br>Ruby
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://restfulapi.net/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/restapi-icon.svg" alt="RestAPI" width="55" height="55" />
+                              <br>RestAPI
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://d3js.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=d3" width="45" height="45" alt="D3.js" />
+                              <br>D3.js
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://mui.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=materialui" width="45" height="45" alt="MaterialUI" />
+                              <br>MaterialUI
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://tailwindcss.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=tailwind" width="45" height="45" alt="Tailwind" />
+                              <br>Tailwind
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=html" width="45" height="45" alt="HTML" />
+                              <br>HTML
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=css" width="45" height="45" alt="CSS" />
+                              <br>CSS
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://sass-lang.com/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="Sass" width="55" height="55" />
+                              <br>Sass
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://getbootstrap.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=bootstrap" width="45" height="45" alt="Bootstrap" />
+                              <br>Bootstrap
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://babeljs.io/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=babel" width="45" height="45" alt="Babel" />
+                              <br>Babel
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://threejs.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=threejs" width="45" height="45" alt="Three.js" />
+                              <br>Three.js
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://soliditylang.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=solidity" width="45" height="45" alt="Solidity" />
+                              <br>Solidity
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://aws.amazon.com/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="55" height="55" />
+                              <br>AWS
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.mongodb.com/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=mongodb" width="45" height="45" alt="MDB" />
+                              <br>MDB
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.mysql.com/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="55" height="55" />
+                              <br>MySQL
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.postgresql.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=postgres" width="45" height="45" alt="PostgreSQL" />
+                              <br>PostgreSQL
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.sqlite.org/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=sqlite" width="45" height="45" alt="SQLite" />
+                              <br>SQLite
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://flutter.dev/" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=flutter" width="45" height="45" alt="Flutter" />
+                              <br>Flutter
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://developer.android.com/studio" target="_blank">
+                              <img src="https://skillicons.dev/icons?i=androidstudio" width="45" height="45" alt="Android" />
+                              <br>Android
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://www.java.com/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="55" height="55" />
+                              <br>Java
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" width="55" height="55" />
+                              <br>C#
+                            </a>
+                          </td>
+                          <td align="center" width="110" height="110" style="border: 1px solid #ddd; padding: 10px; transition: transform 0.3s, box-shadow 0.3s;">
+                            <a href="https://isocpp.org/" target="_blank">
+                              <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="55" height="55" />
+                              <br>C++
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                      </p>
+                      
+                      <style>
+                        td {
+                          transition: transform 0.3s, box-shadow 0.3s;
+                        }
+                      
+                        td:hover {
+                          transform: scale(1.1);
+                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        }
+                      
+                        a {
+                          text-decoration: none;
+                          color: inherit;
+                        }
+                      </style>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          <!-- End of Home Subpage -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <!-- Resume Subpage - atualizado ferla-->
+          <section class="pt-page" data-id="resume">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>Currículo</h2>
+              </div>
+              <div class="page-content">
+          
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Educação</h3>
+                      </div>
+          
+                      <div class="timeline">
+                        <!-- Education 1 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Bacharelado em Ciência da Computação</h4>
+                          <span class="item-period">2014</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/school/universidadepositivo/" target="_blank">Universidade Positivo</a>
+                          </span>
+                          <p class="item-description">Programação avançada, algoritmos e desenvolvimento de software.</p>
+                        </div>
+                        <!-- / Education 1 -->
+          
+                        <!-- Education 2 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Technical Education, Data Processing</h4>
+                          <span class="item-period">2002</span>
+                          <span class="item-small">IAP - Instituto Adventista Paranaense</span>
+                          <p class="item-description">Completed a Technical Education program in Data Processing, covering foundational skills in data management and computer systems.</p>
+                        </div>
+                        <!-- / Education 2 -->
+          
+                        <!-- Education 3 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Technical Education, Data Processing</h4>
+                          <span class="item-period">2002</span>
+                          <span class="item-small">IAP - Instituto Adventista Paranaense</span>
+                          <p class="item-description">Completed a Technical Education program in Data Processing, covering foundational skills in data management and computer systems.</p>
+                        </div>
+                        <!-- / Education 3 -->
+                      </div>
+                    </div>
+          
+                    <!-- Seção de Idiomas logo após Educação na mesma coluna -->
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Idiomas</h3>
+                      </div>
+                  
+                      <div class="timeline">
+                        <!-- Idioma 1 - Português -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Português</h4>
+                          <span class="item-period">Nativo</span>
+                          <p class="item-description">Proficiente em leitura, escrita e fala do idioma nativo, Português.</p>
+                        </div>
+                        <!-- / Idioma 1 -->
+          
+                        <!-- Idioma 2 - Espanhol -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Espanhol</h4>
+                          <span class="item-period">Avançado</span>
+                          <p class="item-description">Capacidade avançada de leitura, escrita e conversação em Espanhol.</p>
+                        </div>
+                        <!-- / Idioma 2 -->
+          
+                        <!-- Idioma 3 - Inglês -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Inglês</h4>
+                          <span class="item-period">Médio</span>
+                          <p class="item-description">Nível intermediário de proficiência em leitura, escrita e conversação em Inglês.</p>
+                        </div>
+                        <!-- / Idioma 3 -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Experiência Profissional</h3>
+                      </div>
+
+                      <div class="timeline">
+                        <!-- Experience 1 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">System Engineer</h4>
+                          <span class="item-period">Julho 2023 - Atualmente</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/company/Minsait/" target="_blank">Minsait</a>
+                          </span>
+                          <p class="item-description">Contribuo para projetos inovadores e desafiadores, aplicando minhas
+                            habilidades em programação, liderança e resolução de problemas. Meu trabalho envolve o desenvolvimento de soluções tecnológicas de ponta em
+                            um ambiente global de consultoria e tecnologia, moldando o futuro digital e impulsionando o crescimento profissional.</p>
+                        </div>
+                        <!-- / Experience 1 -->
+
+                        <!-- Experience 2 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Backbone Technician Senior</h4>
+                          <span class="item-period">Junho 2021 - Julho 2023</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/company/clarobrasil/" target="_blank">Claro Brasil</a>
+                          </span>
+                          <p class="item-description">Operação e manutenção da rede Backbone de alta hierarquia de Transmissão
+                            no estado do Paraná. Durante esse período, adquiri conhecimentos sólidos
+                            em equipamentos de transmissão, com ênfase nas redes TX DWDM Fotônico.
+                            Minha responsabilidade incluiu garantir a integridade e eficiência dessa infraestrutura crítica, 
+                            contribuindo para uma comunicação confiável e de alta performance na região. Meu comprometimento em manter a operação
+                            contínua e aprimorar a rede demonstra minha dedicação ao setor de
+                            telecomunicações e ao desenvolvimento profissional.</p>
+                        </div>
+                        <!-- / Experience 2 -->
+
+                        <!-- Experience 3 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Telecommunications Technician</h4>
+                          <span class="item-period">Dezembro 2012 - Junho 2021</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/company/clarobrasil/" target="_blank">Claro Brasil</a>
+                          </span>
+                          <p class="item-description">Responsável pela Operação e Manutenção de Redes Móveis nas regiões
+                            Oeste de Santa Catarina e Oeste do Paraná, estive à frente de um papel
+                            fundamental na gestão e eficiência das redes de telecomunicações. Minha
+                            atuação abrangeu uma ampla gama de equipamentos de transmissão,
+                            incluindo TX, SDH, DWDM, MW, IPRAN, e NODEB, abrangendo tecnologias
+                            de 2G, 3G e 4G. Durante esse período, liderei operações e manutenções
+                            críticas, garantindo a integridade e desempenho dessas redes, e contribuindo
+                            para a comunicação eficaz nas regiões em que atuava. Sempre comprometido
+                            em assegurar a operação ininterrupta e a otimização da rede.</p>
+                        </div>
+                        <!-- / Experience 3 -->
+
+                        <!-- Experience 4 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Technical Support Consultant</h4>
+                          <span class="item-period">Dezembro 2009 - Agosto 2012</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/company/nokia-siemens-networks/" target="_blank">Nokia Siemens Networks</a>
+                          </span>
+                          <p class="item-description">Responsável pelo atendimento eficaz de tickets e resolução de problemas
+                            técnicos para operadoras de telecomunicações de grande porte em todo o
+                            país, utilizando ferramentas de CRM. Atuava como interface crucial entre
+                            o cliente, que abriu a chamada, e os técnicos de segundo e terceiro níveis
+                            encarregados de solucionar os problemas. Além disso, lidava com suporte
+                            técnico de nível 1 e 2, especialmente no que diz respeito ao sistema BSS
+                            da NSN, coordenava atualizações de software e upgrades, bem como
+                            solucionava falhas em sistemas GSM e WCDMA. Minha experiência incluiu
+                            otimização de redes, operação de sistemas de medição de KPI e coordenação
+                            de atualizações de software a nível sul-americano. Também criei scripts para
+                            GSM e gerenciei o back office de Handover lógico, demonstrando habilidades
+                            abrangentes em suporte técnico e resolução de problemas em ambientes
+                            desafiadores.</p>
+                        </div>
+                        <!-- / Experience 4 -->
+
+                        <!-- Experience 5 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Telecommunications Technician</h4>
+                          <span class="item-period">Novembro 2007 - Novembro 2009</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/company/claro-chile-s.a./" target="_blank">Claro Chile</a>
+                          </span>
+                          <p class="item-description">Profissional multifacetado com amplo conhecimento em Suporte Técnico,
+                            Operação e Manutenção do sistema BSS da NSN, além de ter coordenado
+                            upgrades de software em equipamentos críticos de telecomunicações,
+                            integrado software e hardware em diversas plataformas, como RNC, BSC,
+                            TRAU e BTS. Também contribuí para a otimização de redes, realizando
+                            medições de linha, interface aérea e análises de protocolos. Além disso,
+                            fui responsável por operações de rede e manutenção de infraestrutura em
+                            uma ampla região geográfica no Chile. Minha atuação incluiu a criação de
+                            manuais, scripts e bancos de dados, demonstrando minha habilidade em
+                            abordar desafios complexos em ambientes de alta pressão.</p>
+                        </div>
+                        <!-- / Experience 5 -->
+
+                      <!-- Experience 6 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Telecommunications Technician</h4>
+                          <span class="item-period">Janeiro 2005 - Julho 2007</span>
+                          <span class="item-small">
+                            <a href="https://www.linkedin.com/company/siemens/" target="_blank">Siemens S.A.</a>
+                          </span>
+                          <p class="item-description">Especialista em Suporte Técnico e Operação no sistema BSS da NSN,
+                            realizando análises de falhas, medições de linhas e coordenando upgrades
+                            de software e hardware em equipamentos críticos de telecomunicações.
+                            Além disso, fui responsável por conduzir os primeiros Trials de nanoGSM da
+                            Siemens para operadoras líderes no Brasil, demonstrando minha expertise em
+                            integração e solução de problemas em um ambiente dinâmico.</p>
+                        </div>
+                        <!-- / Experience 6 -->
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Design <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info">
+                        <h4>Web Design</h4>                               
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-1"></div>
+                        </div>
+
+                        <h4>Graphic Design</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-2"></div>
+                        </div>
+
+                        <h4>Print Design</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-3"></div>
+                        </div> 
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Coding <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info">
+                        <h4>HTML5</h4>                               
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-4"></div>
+                        </div>
+
+                        <h4>CSS3/LESS/SASS</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-5"></div>
+                        </div>
+
+                        <h4>jQuery</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-6"></div>
+                        </div> 
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Download Resume Button -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="block">
+                      <div class="center download-resume">
+                        <a href="cv/Curriculo_Edimar_Ferla.pdf" class="btn btn-secondary" target="_blank">Download Currículo</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Download Resume Button -->
+
+              </div>
+            </div>
+          </section>
+          <!-- End of Resume Subpage -->
+
+
+          <!-- Services Subpage -->
+          <section class="pt-page" data-id="services">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>Serviços Prestados</h2>
+              </div>
+              <div class="page-content">
+                <!-- My Services -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="block-title">
+                      <h3>Sou <span>bom em...</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <!--<i class="service-icon fa fa-shopping-cart"></i>-->
+                        <div class="service-image">
+                          <img src="images/service/web_design_icon.png" alt="Responsive Design" class="mCS_img_loaded">
+                        </div>
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="images/service/photography_icon.png" alt="Photography" class="mCS_img_loaded">
+                        </div>
+                        <h4>Photography</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="images/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
+                        </div>
+                        <h4>Management</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
+                        </div>
+                        <h4>Gerar QR Code</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of My Services -->
+
+                <!-- Clients -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="block-title">
+                      <h3>Clientes</h3>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 subpage-block">
+                      <div class="client-block">
+                        <a href="index.html#" target="_blank"><img src="images/clients/client_1.png" alt="image"
+                            class="mCS_img_loaded"></a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 subpage-block">
+                      <div class="client-block">
+                        <a href="index.html#" target="_blank"><img src="images/clients/client_2.png" alt="image"
+                            class="mCS_img_loaded"></a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 subpage-block">
+                      <div class="client-block">
+                        <a href="index.html#" target="_blank"><img src="images/clients/client_3.png" alt="image"
+                            class="mCS_img_loaded"></a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 subpage-block">
+                      <div class="client-block">
+                        <a href="index.html#" target="_blank"><img src="images/clients/client_4.png" alt="image"
+                            class="mCS_img_loaded"></a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 subpage-block">
+                      <div class="client-block">
+                        <a href="index.html#" target="_blank"><img src="images/clients/client_5.png" alt="image"
+                            class="mCS_img_loaded"></a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 subpage-block">
+                      <div class="client-block">
+                        <a href="index.html#" target="_blank"><img src="images/clients/client_6.png" alt="image"
+                            class="mCS_img_loaded"></a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End of Clients -->
+
+                <!-- Testimonials -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="block-title">
+                      <h3>Depoimentos de clientes</h3>
+                    </div>
+
+
+                    <div class="testimonials owl-carousel block">
+                      <!-- Testimonial 1 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Author -->
+                        <div class="testimonial-credits">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="images/testimonials/testimonial_photo_1.jpg" alt="">
+                          </div>
+                          <!-- /Picture -->
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <p class="testimonial-author">Maria Richardson</p>
+                            <p class="testimonial-firm">Lindsley's Lumber</p>
+                          </div>
+                        </div>
+                        <!-- /Testimonial author information -->
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <div class="testimonial-text">
+                            <p>"Phasellus eu nunc tincidunt, ultricies elit vitae, pretium eros. Sed sed ipsum sed
+                              massa."</p>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 1 -->
+
+                      <!-- Testimonial 2 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Author -->
+                        <div class="testimonial-credits">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="images/testimonials/testimonial_photo_2.jpg" alt="">
+                          </div>
+                          <!-- /Picture -->
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <p class="testimonial-author">John Doe</p>
+                            <p class="testimonial-firm">Apple Inc.</p>
+                          </div>
+                        </div>
+                        <!-- /Testimonial author information -->
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <div class="testimonial-text">
+                            <p>"Vivamus porta dapibus tristique. Suspendisse et arcu eget nisi convallis eleifend nec ac
+                              lorem.</p>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 2 -->
+
+                      <!-- Testimonial 3 -->
+                      <div class="testimonial-item">
+                        <!-- Testimonial Author -->
+                        <div class="testimonial-credits">
+                          <!-- Picture -->
+                          <div class="testimonial-picture">
+                            <img src="images/testimonials/testimonial_photo_3.jpg" alt="">
+                          </div>
+                          <!-- /Picture -->
+                          <!-- Testimonial author information -->
+                          <div class="testimonial-author-info">
+                            <p class="testimonial-author">George McQueen</p>
+                            <p class="testimonial-firm">Harmony House</p>
+                          </div>
+                        </div>
+                        <!-- /Testimonial author information -->
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-content">
+                          <div class="testimonial-text">
+                            <p>"Aliquam congue auctor lectus sed fermentum. Nulla ultricies tellus quis sapien lacinia
+                              egestas."</p>
+                          </div>
+                        </div>
+                        <!-- /Testimonial Content -->
+                      </div>
+                      <!-- End of Testimonial 3 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Tesimonials -->
+              </div>
+            </div>
+          </section>
+          <!-- End of Services Subpage -->
+
+
+          <!-- Portfolio Subpage -->
+          <section class="pt-page" data-id="portfolio">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>Portfólio</h2>
+              </div>
+              <div class="page-content">
+
+                <!-- Portfolio Content -->
+                <div class="portfolio-content">
+
+                  <!-- Portfolio filter -->
+                  <ul id="portfolio_filters" class="portfolio-filters">
+                    <li class="active">
+                      <a class="filter btn btn-sm btn-link active" data-group="all">Tudo</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="media">Ferla Interativa</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="illustration">Marketing Digital</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="video">Programação</a>
+                    </li>
+                  </ul>
+                  <!-- End of Portfolio filter -->
+
+                  <!-- Portfolio Grid -->
+                  <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                    <!-- Portfolio Item 1 -->
+                    <figure class="item" data-groups='["all", "media"]'>
+                      <a href="images/portfolio/full/wall.jpg" class="lightbox" title="Você é Seu Deus">
+                        <img src="images/portfolio/1.jpg" alt="">
+                        <div>
+                          <h5 class="name">Use Seu Cérebro</h5>
+                          <small>Media</small>
+                          <i class="fa fa-file-text-o"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 1 -->
+
+                    <!-- Portfolio Item 2 -->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex"
+                        class="lightbox mfp-iframe">
+                        <img src="images/portfolio/2.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Video</small>
+                          <i class="fa fa-video-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 2 -->
+
+                    <!-- Portfolio Item 3 -->
+                    <figure class="item" data-groups='["all","illustration"]'>
+                      <a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                        <img src="images/portfolio/3.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 3 -->
+
+                    <!-- Portfolio Item 4 -->
+                    <figure class="item" data-groups='["all", "media"]'>
+                      <a href="images/portfolio/full/4.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                        <img src="images/portfolio/4.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="fa fa-file-text-o"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 4 -->
+
+                    <!-- Portfolio Item 5 -->
+                    <figure class="item" data-groups='["all", "illustration"]'>
+                      <a href="images/portfolio/full/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
+                        <img src="images/portfolio/5.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 5 -->
+
+                    <!-- Portfolio Item 6 -->
+                    <figure class="item" data-groups='["all", "media"]'>
+                      <a href="images/portfolio/full/6.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                        <img src="images/portfolio/6.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="fa fa-file-text-o"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 6 -->
+
+                    <!-- Portfolio Item 7 -->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi"
+                        class="lightbox mfp-iframe">
+                        <img src="images/portfolio/7.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Video</small>
+                          <i class="fa fa-video-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 7 -->
+
+                    <!-- Portfolio Item 8 -->
+                    <figure class="item" data-groups='["all",  "media"]'>
+                      <a href="images/portfolio/full/1.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                        <img src="images/portfolio/8.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="fa fa-file-text-o"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 8 -->
+
+                    <!-- Portfolio Item 9 -->
+                    <figure class="item" data-groups='["all","illustration"]'>
+                      <a href="images/portfolio/full/9.jpg" class="lightbox" title="Mauris Neque Dolor">
+                        <img src="images/portfolio/9.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 9 -->
+
+                    <!-- Portfolio Item 10 -->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu"
+                        class="lightbox mfp-iframe">
+                        <img src="images/portfolio/10.jpg" alt="">
+                        <div>
+                          <h5 class="name">Desenvolvimento</h5>
+                          <small>Video</small>
+                          <i class="fa fa-video-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 10 -->
+
+                    <!-- Portfolio Item 11 -->
+                    <figure class="item" data-groups='["all","illustration"]'>
+                      <a href="images/portfolio/full/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                        <img src="images/portfolio/11.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 11 -->
+
+                    <!-- Portfolio Item 12 -->
+                    <figure class="item" data-groups='["all","media"]'>
+                      <a href="images/portfolio/full/1.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                        <img src="images/portfolio/12.jpg" alt="">
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="fa fa-file-text-o"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 12 -->
+                  </div>
+                  <!-- /Portfolio Grid -->
+
+                </div>
+                <!-- /Portfolio Content -->
+              </div>
+            </div>
+          </section>
+          <!-- /Portfolio Subpage -->
+
+          <!-- QR Code Subpage -->
+          <section class="pt-page" data-id="gerarqrcode" style="display: flex; justify-content: center; align-items: flex-start; padding-top: 10px; min-height: 100vh;">
+            <div class="section-inner custom-page-content">
+                <div class="page-header color-1" style="text-align: center;">
+                    <h2>Gerar QR Code</h2>
+                </div>
+                <div class="page-content" style="padding-top: 5px;">
+                    <!-- QR Code Content -->
+                    <div class="portfolio-content" style="display: flex; justify-content: center;">
+                        <!-- QR Code Grid -->
+                        <div id="qr-code-grid" class="portfolio-grid portfolio-masonry masonry-grid-3" style="width: 100%; max-width: 500px;">
+                            <!-- Inicio QR Code gerar_qrcode.html-->                            
+                              <div class="timeline-item">
+                                <h4 class="item-title">insira a URL ou texto:</h4>                            
+                                <input type="text" id="url" placeholder="Insira a URL ou texto" class="form-control" style="margin-bottom: 20px; width: 100%; max-width: 400px; margin: auto;">
+                                <div style="display: flex; justify-content: space-between; margin-top: 10px; margin-bottom: 20px;">
+                                    <button class="btn-secondary" onclick="gerarQRCode()" style="flex:auto; max-width: 130px; padding: 8px;">Gerar</button>
+                                    <button class="btn-secondary" id="save-btn" onclick="salvarQRCode()" disabled style="flex:auto; max-width: 130px; padding: 8px;">Salvar</button>
+                                </div>
+                                <div id="qrcode-container" style="text-align: center;">
+                                    <div id="qrcode" style="display: inline-block;" onclick="abrirQRCodeModal()"></div>
+                                </div>
+                            </div>
+                            <!-- Fim QR Code gerar_qrcode.html-->
+                        </div>
+                        <!-- /QR Code Grid -->
+                    </div>
+                    <!-- /QR Code Content -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal para exibir o QR Code em tela cheia -->
+        <div id="qrCodeModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8); text-align: center;">
+            <span onclick="fecharQRCodeModal()" style="position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+            <img id="qrCodeModalImg" style="margin: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 80%;">
+        </div>
+        
+        <script type="text/javascript">
+          function gerarQRCode() {
+              var url = document.getElementById("url").value;
+              var size = Math.min(window.innerWidth * 0.6, 300); // 60% da largura da tela ou 300px
+      
+              if (!url) {
+                  alert("Por favor, insira uma URL ou texto.");
+                  return;
+              }
+      
+              // Limpa o QR code anterior, se houver
+              document.getElementById("qrcode").innerHTML = "";
+      
+              // Gera o QR code
+              new QRCode(document.getElementById("qrcode"), {
+                  text: url,
+                  width: size,
+                  height: size
+              });
+      
+              // Habilita o botão de salvar após a geração do QR code
+              document.getElementById("save-btn").disabled = false;
+          }
+      
+          function abrirQRCodeModal() {
+              var canvas = document.querySelector("#qrcode canvas");
+              if (canvas) {
+                  var modal = document.getElementById("qrCodeModal");
+                  var modalImg = document.getElementById("qrCodeModalImg");
+                  modalImg.src = canvas.toDataURL("image/png");
+                  modal.style.display = "block";
+              }
+          }
+      
+          function fecharQRCodeModal() {
+              var modal = document.getElementById("qrCodeModal");
+              modal.style.display = "none";
+          }
+      
+          // Fecha o modal ao clicar fora da imagem
+          window.onclick = function(event) {
+              var modal = document.getElementById("qrCodeModal");
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+      
+          function salvarQRCode() {
+              var canvas = document.querySelector("#qrcode canvas");
+              if (canvas) {
+                  var link = document.createElement("a");
+                  link.href = canvas.toDataURL("image/png");
+                  link.download = "qrcode.png";
+                  link.click();
+              } else {
+                  alert("Por favor, gere um QR Code primeiro.");
+              }
+          }
+      
+          // Adiciona suporte para Enter/Ir no campo de texto
+          document.getElementById("url").addEventListener("keyup", function(event) {
+              if (event.key === "Enter") {
+                  gerarQRCode();
+                  this.blur(); // Remove o foco do campo de texto, fechando o teclado virtual
+              }
+          });
+      </script>
+        
+
+                    
+                    </body>
+                    </html><!-- Fim QR Code gerar_qrcode.html-->
+
+                  </div>
+                  <!-- /QR Code Grid -->
+                </div>
+                <!-- /QR Code Content -->
+              </div>
+            </div>
+          </section>
+          <!-- /end of QR Code Subpage -->          
+
+
+        </div>
+      </div>
+      <!-- /Page changer wrapper -->
+    </div>
+    <!-- /Main Content -->
+  </div>
+  <footer>
+    <div class="copyrights">&copy; Todos os Direitos Reservados para Edimar Ferla de Almeida</div>
+  </footer>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/pages-switcher.js"></script>
+  <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/validator.js"></script>
+  <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+  <script type="text/javascript" src="js/jquery.googlemap.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/progress.js"></script>
 </body>
+
 </html>
